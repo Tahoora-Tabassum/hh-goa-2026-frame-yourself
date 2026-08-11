@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-syne: 'Syne', sans-serif;
+  --font-space: 'Space Grotesk', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+
+  --color-goa-green: #072a1e;
+  --color-goa-emerald: #0B3B2B;
+  --color-goa-yellow: #FFDF00;
+  --color-goa-pink: #FF2E93;
+  --color-goa-cream: #FFF9E6;
+  --color-goa-orange: #FF6B00;
+}
+
+@layer utilities {
+  .font-syne {
+    font-family: var(--font-syne);
+  }
+  .font-space {
+    font-family: var(--font-space);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom noise/poster texture overlay */
+.bg-poster-grain {
+  background-image: radial-gradient(rgba(255, 223, 0, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #072a1e;
+}
+::-webkit-scrollbar-thumb {
+  background: #0B3B2B;
+  border: 2px solid #FFDF00;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFDF00;
+}
+
+/* Halftone dot pattern */
+.halftone-pattern {
+  background-image: radial-gradient(#FFDF00 20%, transparent 20%);
+  background-position: 0 0;
+  background-size: 10px 10px;
+  opacity: 0.15;
+}
+

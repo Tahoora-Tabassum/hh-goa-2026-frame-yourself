@@ -1,0 +1,6 @@
+{
+  "name": "Frame Yourself - HH Goa 2026",
+  "description": "Interactive HH Goa 2026 social-media graphic generator and builder ID creator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
